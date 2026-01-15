@@ -1,0 +1,24 @@
+---
+title: "Swedish Public Procurement Scraper"
+summary: "Production-grade data pipeline for Swedish TED API notices."
+featured: true
+tags: ["Python", "TED API", "SQLAlchemy", "Typer", "Docker"]
+startDate: "2026-01-14"
+endDate: "2026-01-15"
+repoUrl: "https://github.com/Etti95/sweden-procurement-scraper"
+demoUrl: ""
+metric: "200+ notices ingested daily"
+---
+
+## Problem
+Needed a reliable, automated way to ingest Swedish public procurement notices from the EU's TED API v3, overcoming complex query syntax and field mapping challenges to ensure access to contract award data.
+
+## Approach
+Built a resilient, production-ready Python pipeline.
+- Implemented robust `tenacity` retry logic for API stability.
+- Designed an idempotent `SQLAlchemy` database schema to prevent duplicates.
+- Created a `typer` CLI for easy daily operations and backfilling.
+- Solved critical API field mapping issues for "Contract Award" notices (flattened JSON structures).
+
+## Outcome
+A reliable, containerized scraper that runs daily updates, ensuring zero data loss and providing a structured SQL database for downstream analysis.
