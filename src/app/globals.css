@@ -60,6 +60,12 @@
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 2px);
 
+  --color-ubuntu-orange: #E95420;
+  --color-ubuntu-orange-dark: #C7401A;
+  --color-ubuntu-aubergine: #772953;
+  --color-ubuntu-warm-grey: #AEA79F;
+  --color-ubuntu-cool-grey: #333333;
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
