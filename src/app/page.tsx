@@ -16,18 +16,19 @@ export default function Home() {
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Turning complex data <br className="hidden sm:inline" />
             into <span className="text-zinc-500 dark:text-zinc-400">intuitive products.</span>
-            <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
-              I’m Etiosa Richmore, a Data Engineer and Prompt Engineer based in Sweden.
-              I pride myself on changing complex problems to clear solutions.
-            </p>
-            <div className="flex gap-4 pt-4">
-              <Link href="/projects">
-                <Button size="lg">View Projects</Button>
-              </Link>
-              <Link href="mailto:etiosa.richmore@gmail.com">
-                <Button variant="outline" size="lg">Contact Me</Button>
-              </Link>
-            </div>
+          </h1>
+          <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
+            I’m Etiosa Richmore, a Data Engineer and Prompt Engineer based in Sweden.
+            I pride myself on changing complex problems to clear solutions.
+          </p>
+          <div className="flex gap-4 pt-4">
+            <Link href="/projects">
+              <Button size="lg">View Projects</Button>
+            </Link>
+            <Link href="mailto:etiosa.richmore@gmail.com">
+              <Button variant="outline" size="lg">Contact Me</Button>
+            </Link>
+          </div>
         </div>
       </section>
 
