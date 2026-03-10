@@ -1,0 +1,22 @@
+---
+title: "Digital Assets Warehouse"
+summary: "A production-grade pipeline for on-chain crypto analytics using dbt and Airflow."
+featured: true
+tags: ["dbt", "Airflow", "Postgres", "Python"]
+startDate: "2025-01-01"
+repoUrl: "https://github.com/Etti95/digital_assets_warehouse"
+metric: "Structured Bronze-Silver-Gold pipeline"
+---
+
+## Problem
+Many crypto data projects are either toy scripts or overly complex platforms. There was a need to build a pipeline that is small enough to understand quickly but structured like a real data platform, bridging the gap between raw blockchain data and analytics-ready models.
+
+## Approach
+Architected an end-to-end local data warehouse with a clear Bronze to Silver to Gold pattern.
+- Built Python ingestion services to load Ethereum blocks, transactions, and daily token prices via RPC/APIs.
+- Orchestrated the data flow and dbt transformations using Airflow.
+- modeled the raw data into Silver normalization tables and robust Gold analytics marts (e.g., daily active wallets, gas metrics) in Postgres.
+- Deployed the infrastructure entirely through Docker Compose for local-first development.
+
+## Outcome
+A comprehensive, production-minded portfolio project demonstrating API ingestion, idempotent warehouse loading, analytics engineering, and local scheduling.
