@@ -1,0 +1,29 @@
+---
+title: "Bittensor Intelligence Terminal"
+summary: "Bloomberg Terminal-style research and monitoring platform for the Bittensor ecosystem."
+featured: true
+tags: ["TypeScript", "Next.js", "Fastify", "PostgreSQL", "TimescaleDB", "Turborepo"]
+startDate: "2026-04-01"
+repoUrl: "https://github.com/Etti95/bittensor-terminal"
+metric: "20 subnets tracked in real-time"
+---
+
+## Problem
+
+The Bittensor ecosystem — 128+ active subnets, ~$4B+ TAO market cap, and $1B+ in subnet alpha tokens — has no institutional-grade intelligence platform. Existing tools like TaoStats and TaoMarketCap cover fragments (block explorer data, basic price tracking), but none delivers cross-subnet comparative analytics, alpha token financial intelligence, aggregated news, or analyst-grade curation with visible provenance.
+
+## Approach
+
+Designed and built a full-stack monorepo intelligence platform with chain-native data as the source of truth.
+
+- **Data Ingestion Pipeline:** Built workers that poll the TaoStats API (subnet snapshots every 5 min), CoinGecko (TAO/USD every 2 min), and GitHub (repo activity every 30 min). Raw payloads are stored before normalization for replay and auditability.
+- **Source Registry & Curation:** Implemented an analyst workflow for verifying and scoring external sources (GitHub repos, websites, X accounts, Discord) with officiality, confidence, and signal scores. On-chain identity data is auto-synced for 110+ subnets.
+- **Time-Series Database:** Used TimescaleDB on Postgres for append-only subnet snapshots (price, market cap, reserves, emission, validators, miners) and market data, enabling historical charting and trend analysis.
+- **Fastify API:** Internal HTTP service exposing ecosystem summaries, per-subnet dossiers with full history, GitHub activity feeds, and admin endpoints for risk flags and analyst notes.
+- **Terminal UI:** Next.js frontend with a subnet explorer, ecosystem dashboard, and per-subnet dossier pages showing chain metrics, GitHub activity, risk flags, and curated sources — all with visible provenance.
+- **Admin Console:** Separate Next.js app for analyst curation: source verification, entity resolution, risk flagging, and note-taking.
+- **Infrastructure:** Docker Compose stack with TimescaleDB, Redis, and MinIO (S3-compatible object storage). Turborepo for monorepo orchestration across 7 packages and 2 apps.
+
+## Outcome
+
+A production-grade intelligence platform that aggregates chain-native, market, and development signals for 20 curated Bittensor subnets into a single terminal experience — built to expand to full network coverage.
