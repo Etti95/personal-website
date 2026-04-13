@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Etiosa Richmore | Data Engineer & Prompt Engineer",
-  description: "Portfolio of Etiosa Richmore - Data Engineer and Prompt Engineer.",
+  title: "Etiosa Richmore | Full-Stack Data Analyst & Analytics Engineer",
+  description: "Portfolio of Etiosa Richmore - Full-Stack Data Analyst & Analytics Engineer.",
 };
 
 export default function RootLayout({

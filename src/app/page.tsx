@@ -18,7 +18,7 @@ export default function Home() {
             into <span className="text-zinc-500 dark:text-zinc-400">intuitive products.</span>
           </h1>
           <p className="max-w-2xl text-lg text-muted-foreground md:text-xl">
-            I’m Etiosa Richmore, a Data Engineer and Prompt Engineer based in Sweden.
+            I’m Etiosa Richmore, a Full-Stack Data Analyst & Analytics Engineer based in Sweden.
             I pride myself on changing complex problems to clear solutions.
           </p>
           <div className="flex gap-4 pt-4">
